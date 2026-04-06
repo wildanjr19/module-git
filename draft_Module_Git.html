@@ -1,0 +1,1361 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8"><style>@page {
+  size: A4;
+  margin: 18mm 14mm 18mm 16mm;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.58;
+  color: #1f2937;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #0f172a;
+  line-height: 1.25;
+  break-after: avoid-page;
+}
+
+h1 {
+  font-size: 24pt;
+  margin-bottom: 0.45em;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid #1d4ed8;
+}
+
+h2 {
+  font-size: 16pt;
+  margin-top: 1.5em;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+h3 {
+  font-size: 12.5pt;
+  color: #1e40af;
+}
+
+h4 {
+  font-size: 11.25pt;
+}
+
+p,
+li {
+  text-align: justify;
+}
+
+ol,
+ul {
+  padding-left: 1.35em;
+}
+
+#daftar-isi {
+  margin-top: 0.6em;
+}
+
+#daftar-isi + ol {
+  margin-top: 0.6em;
+  padding: 1em 1.2em 0.75em 2em;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+#daftar-isi + ol li {
+  margin-bottom: 0.32em;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  margin: 0.8em 0 1.1em;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+th,
+td {
+  padding: 0.45em 0.6em;
+  border: 1px solid #cbd5e1;
+  vertical-align: top;
+}
+
+th {
+  background: #eff6ff;
+  color: #0f172a;
+}
+
+blockquote {
+  margin: 0.5em 0 1em;
+  padding: 0.7em 0.9em;
+  border-left: 4px solid #60a5fa;
+  background: #eff6ff;
+  font-style: normal;
+}
+
+pre,
+code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+code {
+  padding: 0.12em 0.32em;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background: #f6f8fa;
+  color: #1f2937;
+  font-size: 0.92em;
+}
+
+pre {
+  margin: 0.75em 0 1.1em;
+  padding: 0.9em 1em;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #24292f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+pre code,
+pre code.hljs,
+pre .hljs {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+
+pre code span,
+pre .hljs span {
+  color: inherit !important;
+  font-style: inherit !important;
+  font-weight: inherit !important;
+}
+
+pre code.hljs {
+  overflow-x: visible;
+}
+
+.hljs {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+img,
+table,
+pre,
+blockquote {
+  break-inside: avoid-page;
+}
+
+hr {
+  margin: 1.4em 0;
+  border: 0;
+  border-top: 1px solid #cbd5e1;
+}
+/*# sourceURL=G:\Other computers\My Laptop\Drive\Asisten Praktikum\Sistem Informasi Manajemen\pdf-style.css*/</style><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}/*# sourceURL=C:\Users\solon\AppData\Local\npm-cache\_npx\55158e48eb5c59f7\node_modules\highlight.js\styles\github.css*/</style></head>
+	<body class="">
+		<h1 id="modul-git-version-control">Modul Git Version Control</h1>
+<hr>
+<h2 id="daftar-isi">Daftar Isi</h2>
+<ol>
+<li><a href="#1-apa-itu-version-control">Apa Itu Version Control?</a></li>
+<li><a href="#2-mengenal-git">Mengenal Git</a></li>
+<li><a href="#3-membuat-akun-github">Membuat Akun GitHub</a></li>
+<li><a href="#4-github-student-developer-pack">GitHub Student Developer Pack</a></li>
+<li><a href="#5-instalasi-git">Instalasi Git</a></li>
+<li><a href="#6-konfigurasi-awal-git">Konfigurasi Awal Git</a></li>
+<li><a href="#7-konsep-dasar-git">Konsep Dasar Git</a></li>
+<li><a href="#8-perintah-git-dasar">Perintah Git Dasar</a></li>
+<li><a href="#9-bekerja-dengan-remote-repository">Bekerja dengan Remote Repository</a></li>
+<li><a href="#10-melihat-riwayat-dan-membatalkan-perubahan">Melihat Riwayat dan Membatalkan Perubahan</a></li>
+<li><a href="#11-deployment-dengan-github-pages">Deployment dengan GitHub Pages</a></li>
+<li><a href="#12-tips-trik-dan-best-practice">Tips, Trik, dan Best Practice</a></li>
+<li><a href="#13-referensi-dan-sumber-belajar-lanjutan">Referensi dan Sumber Belajar Lanjutan</a></li>
+</ol>
+<hr>
+<h2 id="1-apa-itu-version-control">1. Apa Itu Version Control?</h2>
+<h3 id="pengertian">Pengertian</h3>
+<p><strong>Version Control System</strong> adalah sistem yang merekam setiap perubahan pada file atau sekumpulan file dari waktu ke waktu, sehingga kamu bisa kembali ke versi tertentu kapan pun kamu mau.</p>
+<p>Bayangkan kamu menulis skripsi dan menyimpan file seperti ini:</p>
+<pre><code>skripsi_v1.docx
+skripsi_v2_final.docx
+skripsi_v2_final_REVISI.docx
+skripsi_v2_final_REVISI_beneran.docx
+</code></pre>
+<p>Inilah masalah yang dipecahkan oleh version control — kamu cukup punya <strong>satu file</strong>, dan sistemnya yang melacak semua perubahan.</p>
+<h3 id="kegunaan-version-control">Kegunaan Version Control</h3>
+<table>
+<thead>
+<tr>
+<th>Kegunaan</th>
+<th>Penjelasan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Pelacakan Perubahan</strong></td>
+<td>Tahu siapa mengubah apa, kapan, dan kenapa</td>
+</tr>
+<tr>
+<td><strong>Pemulihan</strong></td>
+<td>Kembalikan file ke versi sebelumnya jika ada kesalahan</td>
+</tr>
+<tr>
+<td><strong>Kolaborasi</strong></td>
+<td>Banyak orang bisa bekerja pada proyek yang sama secara bersamaan</td>
+</tr>
+<tr>
+<td><strong>Branching</strong></td>
+<td>Uji coba fitur baru tanpa merusak kode utama</td>
+</tr>
+<tr>
+<td><strong>Audit Trail</strong></td>
+<td>Riwayat lengkap seluruh perubahan proyek</td>
+</tr>
+</tbody></table>
+<h3 id="jenis-jenis-vcs">Jenis-Jenis VCS</h3>
+<ul>
+<li><strong>Local VCS</strong> — Riwayat disimpan di komputer lokal saja (RCS)</li>
+<li><strong>Centralized VCS</strong> — Satu server pusat, semua klien terhubung ke sana (SVN, CVS)</li>
+<li><strong>Distributed VCS</strong> — Setiap klien punya salinan penuh repository (Git, Mercurial)</li>
+</ul>
+<hr>
+<h2 id="2-mengenal-git">2. Mengenal Git</h2>
+<h3 id="apa-itu-git">Apa Itu Git?</h3>
+<p><strong>Git</strong> adalah sistem version control terdistribusi (<em>Distributed Version Control System</em>) yang paling populer di dunia. Git dibuat oleh <strong>Linus Torvalds</strong> pada tahun 2005 untuk mengelola pengembangan kernel Linux.</p>
+<h3 id="mengapa-git">Mengapa Git?</h3>
+<ul>
+<li><strong>Cepat</strong> — Sebagian besar operasi berjalan secara lokal</li>
+<li><strong>Aman</strong> — Setiap data di-hash menggunakan SHA-1</li>
+<li><strong>Branching yang mudah</strong> — Membuat dan menggabungkan branch sangat ringan</li>
+<li><strong>Terdistribusi</strong> — Setiap developer punya salinan penuh repository</li>
+<li><strong>Gratis dan Open Source</strong></li>
+</ul>
+<h3 id="git-vs-github">Git vs GitHub</h3>
+<blockquote>
+<p><strong>Git ≠ GitHub!</strong> Ini perbedaan yang sering membingungkan pemula.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Git</strong></th>
+<th><strong>GitHub</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Apa</strong></td>
+<td>Software version control</td>
+<td>Platform hosting repository</td>
+</tr>
+<tr>
+<td><strong>Di mana</strong></td>
+<td>Berjalan di komputermu</td>
+<td>Layanan cloud (website)</td>
+</tr>
+<tr>
+<td><strong>Fungsi</strong></td>
+<td>Melacak perubahan kode</td>
+<td>Menyimpan &amp; berkolaborasi online</td>
+</tr>
+<tr>
+<td><strong>Alternatif</strong></td>
+<td>Mercurial, SVN</td>
+<td>GitLab, Bitbucket</td>
+</tr>
+</tbody></table>
+<p>Analoginya: <strong>Git</strong> = Microsoft Word, <strong>GitHub</strong> = Google Drive.</p>
+<hr>
+<h2 id="3-membuat-akun-github">3. Membuat Akun GitHub</h2>
+<h3 id="langkah-langkah">Langkah-Langkah</h3>
+<ol>
+<li>Buka <strong><a href="https://github.com">github.com</a></strong> di browser</li>
+<li>Klik <strong>"Sign up"</strong> di pojok kanan atas</li>
+<li>Masukkan <strong>email</strong> kamu</li>
+<li>Buat <strong>password</strong> yang kuat</li>
+<li>Pilih <strong>username</strong> — ini akan menjadi identitasmu di GitHub (pilih yang profesional, misal: <code>namaKamu-dev</code>)</li>
+<li>Selesaikan verifikasi dan klik <strong>"Create account"</strong></li>
+<li>Pilih plan <strong>Free</strong> (sudah lebih dari cukup untuk pemula)</li>
+<li>Verifikasi email yang dikirim ke inbox kamu</li>
+</ol>
+<h3 id="tips-memilih-username-github">Tips Memilih Username GitHub</h3>
+<ul>
+<li>Gunakan nama asli atau nama profesional</li>
+<li>Hindari angka atau karakter acak</li>
+<li>Konsisten dengan platform lain (LinkedIn, dll)</li>
+<li>Contoh bagus: <code>budi-santoso</code>, <code>budidev</code>, <code>budisantoso</code></li>
+</ul>
+<h3 id="personalisasi-profil">Personalisasi Profil</h3>
+<p>Setelah akun dibuat, lengkapi profilmu:</p>
+<ul>
+<li><strong>Avatar</strong> — Foto profesional atau avatar yang konsisten</li>
+<li><strong>Bio</strong> — Deskripsi singkat (misal: "Statistics Student | Data Science Enthusiast")</li>
+<li><strong>Location</strong> — Kota/negara</li>
+<li><strong>Website</strong> — Link portfolio jika ada</li>
+<li><strong>README Profile</strong> — File khusus yang tampil di halaman profil GitHub-mu</li>
+</ul>
+<hr>
+<h2 id="4-github-student-developer-pack">4. GitHub Student Developer Pack</h2>
+<h3 id="apa-itu-github-student-developer-pack">Apa Itu GitHub Student Developer Pack?</h3>
+<p><strong>GitHub Student Developer Pack</strong> adalah program dari GitHub yang memberikan <strong>akses gratis</strong> ke berbagai tool dan layanan berbayar khusus untuk pelajar/mahasiswa aktif. Nilainya bisa mencapai ribuan dolar!</p>
+<h3 id="cara-mendaftar">Cara Mendaftar</h3>
+<ol>
+<li>Buka <strong><a href="https://education.github.com/pack">education.github.com/pack</a></strong></li>
+<li>Klik <strong>"Get student benefits"</strong></li>
+<li>Login dengan akun GitHub kamu</li>
+<li>Pilih <strong>"Student"</strong></li>
+<li>Masukkan <strong>email institusi</strong> kamu (misal: <code>nama@student.uns.ac.id</code>)</li>
+<li>Upload <strong>bukti status mahasiswa</strong> (KTM, surat keterangan, atau transkrip)</li>
+<li>Tunggu verifikasi (biasanya 1–7 hari kerja)</li>
+</ol>
+<blockquote>
+<p><strong>Tips:</strong> Gunakan email kampus jika ada. Jika tidak, upload foto KTM yang jelas.</p>
+</blockquote>
+<h3 id="benefit-unggulan">Benefit Unggulan</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Benefit</th>
+<th>Nilai</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>GitHub Pro</strong></td>
+<td>Repository private tak terbatas, fitur advanced</td>
+<td>Gratis selama kuliah</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>AI coding assistant</td>
+<td>Gratis selama kuliah</td>
+</tr>
+<tr>
+<td><strong>JetBrains IDEs</strong></td>
+<td>PyCharm, IntelliJ, dll</td>
+<td>Gratis 1 tahun (renewable)</td>
+</tr>
+<tr>
+<td><strong>Namecheap</strong></td>
+<td>Domain <code>.me</code> gratis 1 tahun + SSL</td>
+<td>~$13/tahun</td>
+</tr>
+<tr>
+<td><strong>Microsoft Azure</strong></td>
+<td>$100 Azure credits</td>
+<td>$100</td>
+</tr>
+<tr>
+<td><strong>DigitalOcean</strong></td>
+<td>Cloud server credits</td>
+<td>$200</td>
+</tr>
+<tr>
+<td><strong>Canva Pro</strong></td>
+<td>Design tool premium</td>
+<td>Gratis</td>
+</tr>
+<tr>
+<td><strong>DataCamp</strong></td>
+<td>Kursus data science</td>
+<td>Gratis 3 bulan</td>
+</tr>
+<tr>
+<td><strong>MongoDB Atlas</strong></td>
+<td>Cloud database</td>
+<td>Credits gratis</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="5-instalasi-git">5. Instalasi Git</h2>
+<h3 id="windows">Windows</h3>
+<p><strong>Cara 1: Download Installer (Direkomendasikan)</strong></p>
+<ol>
+<li>Buka <strong><a href="https://git-scm.com/download/win">git-scm.com/download/win</a></strong></li>
+<li>Download installer terbaru (64-bit)</li>
+<li>Jalankan installer dan ikuti wizard:<ul>
+<li>Biarkan semua pengaturan default</li>
+<li>Pada bagian <strong>"Adjusting your PATH environment"</strong>, pilih <strong>"Git from the command line and also from 3rd-party software"</strong></li>
+<li>Pada bagian <strong>"Choosing the default behavior of <code>git pull</code>"</strong>, pilih <strong>"Fast-forward or merge"</strong></li>
+</ul>
+</li>
+<li>Klik <strong>Install</strong> lalu <strong>Finish</strong></li>
+</ol>
+<p><strong>Cara 2: Via winget (Windows Package Manager)</strong></p>
+<pre><code class="hljs cmd">winget install --id Git.Git -e --source winget
+</code></pre>
+<h3 id="verifikasi-instalasi">Verifikasi Instalasi</h3>
+<p>Buka <strong>Command Prompt (CMD)</strong> dan jalankan:</p>
+<pre><code class="hljs cmd">git --version
+</code></pre>
+<p>Output yang diharapkan:</p>
+<pre><code>git version 2.47.0.windows.1
+</code></pre>
+<hr>
+<h2 id="6-konfigurasi-awal-git">6. Konfigurasi Awal Git</h2>
+<p>Sebelum mulai bekerja, kita perlu mengatur identitas di Git. Informasi ini akan muncul di setiap commit yang kamu buat.</p>
+<h3 id="mengatur-nama-dan-email">Mengatur Nama dan Email</h3>
+<pre><code class="hljs cmd">git config --global user.name "Nama Kamu"
+git config --global user.email "email@kamu.com"
+</code></pre>
+<blockquote>
+<p>Gunakan email yang sama dengan akun GitHub-mu.</p>
+</blockquote>
+<h3 id="mengatur-default-branch-name">Mengatur Default Branch Name</h3>
+<pre><code class="hljs cmd">git config --global init.defaultBranch main
+</code></pre>
+<h3 id="mengatur-editor-teks-default-opsional">Mengatur Editor Teks Default (Opsional)</h3>
+<pre><code class="hljs cmd">:: Menggunakan Notepad (bawaan Windows)
+git config --global core.editor notepad
+
+:: Menggunakan VS Code
+git config --global core.editor "code --wait"
+</code></pre>
+<h3 id="mengatur-line-ending-penting-untuk-windows">Mengatur Line Ending (Penting untuk Windows!)</h3>
+<pre><code class="hljs cmd">git config --global core.autocrlf true
+</code></pre>
+<blockquote>
+<p>Ini mencegah masalah perbedaan format baris antara Windows dan Linux/Mac.</p>
+</blockquote>
+<h3 id="melihat-semua-konfigurasi">Melihat Semua Konfigurasi</h3>
+<pre><code class="hljs cmd">git config --list
+</code></pre>
+<h3 id="file-konfigurasi">File Konfigurasi</h3>
+<p>Konfigurasi global tersimpan di <code>C:\Users\NamaUser\.gitconfig</code>. Kamu bisa membukanya dengan:</p>
+<pre><code class="hljs cmd">notepad C:\Users\<span class="hljs-variable">%USERNAME%</span>\.gitconfig
+</code></pre>
+<hr>
+<h2 id="7-konsep-dasar-git">7. Konsep Dasar Git</h2>
+<h3 id="tiga-area-kerja-git">Tiga Area Kerja Git</h3>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                    WORKING DIRECTORY                    │
+│         (File yang sedang kamu edit sekarang)           │
+└──────────────────────┬──────────────────────────────────┘
+                       │  git add
+                       ▼
+┌─────────────────────────────────────────────────────────┐
+│                    STAGING AREA (INDEX)                 │
+│       (File yang sudah siap untuk di-commit)            │
+└──────────────────────┬──────────────────────────────────┘
+                       │  git commit
+                       ▼
+┌─────────────────────────────────────────────────────────┐
+│                    REPOSITORY (.git)                    │
+│         (Riwayat commit yang sudah tersimpan)           │
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Penjelasan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Working Directory</strong></td>
+<td>Folder proyekmu — tempat kamu membuat dan mengedit file</td>
+</tr>
+<tr>
+<td><strong>Staging Area</strong></td>
+<td>"Antrian commit" — file yang sudah dipilih untuk disimpan</td>
+</tr>
+<tr>
+<td><strong>Repository</strong></td>
+<td>Database Git — semua riwayat perubahan tersimpan di sini</td>
+</tr>
+</tbody></table>
+<h3 id="status-file-dalam-git">Status File dalam Git</h3>
+<pre><code>Untracked → Tracked (Staged) → Committed → Modified → Staged → Committed
+</code></pre>
+<ul>
+<li><strong>Untracked</strong> — File baru yang belum dikenal Git</li>
+<li><strong>Staged</strong> — File sudah ditambahkan ke staging area</li>
+<li><strong>Committed</strong> — File sudah tersimpan di repository</li>
+<li><strong>Modified</strong> — File yang sudah di-commit tapi ada perubahan baru</li>
+</ul>
+<h3 id="apa-itu-commit">Apa Itu Commit?</h3>
+<p><strong>Commit</strong> adalah snapshot (foto) dari seluruh proyekmu pada suatu titik waktu. Setiap commit memiliki:</p>
+<ul>
+<li><strong>Hash unik</strong> (misal: <code>a3f2c1d</code>) — pengenal commit</li>
+<li><strong>Pesan</strong> — deskripsi apa yang berubah</li>
+<li><strong>Timestamp</strong> — kapan commit dibuat</li>
+<li><strong>Author</strong> — siapa yang membuat commit</li>
+<li><strong>Parent</strong> — pointer ke commit sebelumnya</li>
+</ul>
+<hr>
+<h2 id="8-perintah-git-dasar">8. Perintah Git Dasar</h2>
+<h3 id="membuat-repository-baru">Membuat Repository Baru</h3>
+<pre><code class="hljs cmd">:: Buat folder proyek baru
+<span class="hljs-built_in">mkdir</span> nama-proyek
+<span class="hljs-built_in">cd</span> nama-proyek
+
+:: Inisialisasi Git repository
+git init
+</code></pre>
+<p>Output:</p>
+<pre><code>Initialized empty Git repository in C:/Users/kamu/nama-proyek/.git/
+</code></pre>
+<h3 id="melihat-status-repository">Melihat Status Repository</h3>
+<pre><code class="hljs cmd">git status
+</code></pre>
+<h3 id="menambahkan-file-ke-staging-area">Menambahkan File ke Staging Area</h3>
+<pre><code class="hljs cmd">:: Tambahkan file tertentu
+git add nama-file.txt
+
+:: Tambahkan semua file di folder saat ini
+git add .
+
+:: Tambahkan semua file dengan ekstensi tertentu
+git add *.py
+</code></pre>
+<h3 id="membuat-commit">Membuat Commit</h3>
+<pre><code class="hljs cmd">:: Commit dengan pesan singkat
+git commit -m "Pesan commit yang deskriptif"
+
+:: Contoh pesan commit yang baik
+git commit -m "Add login feature with email validation"
+git commit -m "Fix bug: null pointer exception on user profile"
+git commit -m "Update README with installation instructions"
+</code></pre>
+<blockquote>
+<p><strong>Tips Pesan Commit:</strong> Gunakan present tense dalam bahasa Inggris. Jelaskan <strong>apa</strong> yang berubah, bukan <strong>bagaimana</strong>.</p>
+</blockquote>
+<h3 id="shortcut-add--commit-sekaligus">Shortcut: Add + Commit Sekaligus</h3>
+<pre><code class="hljs cmd">:: Hanya untuk file yang sudah pernah di-track sebelumnya
+git commit -am "Pesan commit"
+</code></pre>
+<h3 id="melihat-log-commit">Melihat Log Commit</h3>
+<pre><code class="hljs cmd">:: Log lengkap
+git log
+
+:: Log ringkas (satu baris per commit)
+git log --oneline
+
+:: Log dengan grafik branch
+git log --oneline --graph --all
+
+:: Log N commit terakhir
+git log --oneline -<span class="hljs-number">5</span>
+</code></pre>
+<h3 id="contoh-alur-kerja-lengkap">Contoh Alur Kerja Lengkap</h3>
+<pre><code class="hljs cmd">:: <span class="hljs-number">1</span>. Masuk ke folder proyek
+<span class="hljs-built_in">cd</span> C:\Users\kamu\proyek-saya
+
+:: <span class="hljs-number">2</span>. Inisialisasi Git
+git init
+
+:: <span class="hljs-number">3</span>. Buat file baru (contoh)
+<span class="hljs-built_in">echo</span>. &gt; README.<span class="hljs-built_in">md</span>
+notepad README.<span class="hljs-built_in">md</span>
+
+:: <span class="hljs-number">4</span>. Cek status
+git status
+
+:: <span class="hljs-number">5</span>. Tambahkan ke staging
+git add README.<span class="hljs-built_in">md</span>
+
+:: <span class="hljs-number">6</span>. Commit
+git commit -m "Initial commit: add README"
+
+:: <span class="hljs-number">7</span>. Cek log
+git log --oneline
+</code></pre>
+<hr>
+<h2 id="9-bekerja-dengan-remote-repository">9. Bekerja dengan Remote Repository</h2>
+<h3 id="apa-itu-remote">Apa Itu Remote?</h3>
+<p><strong>Remote</strong> adalah versi repository yang tersimpan di server (seperti GitHub). Ini memungkinkan kolaborasi dan backup kode.</p>
+<h3 id="membuat-repository-di-github">Membuat Repository di GitHub</h3>
+<ol>
+<li>Login ke <strong>github.com</strong></li>
+<li>Klik tombol <strong>"+"</strong> → <strong>"New repository"</strong></li>
+<li>Isi <strong>Repository name</strong> (gunakan huruf kecil, pisahkan dengan <code>-</code>)</li>
+<li>Pilih <strong>Public</strong> atau <strong>Private</strong></li>
+<li><strong>Jangan</strong> centang "Initialize this repository" jika sudah punya repo lokal</li>
+<li>Klik <strong>"Create repository"</strong></li>
+</ol>
+<h3 id="menghubungkan-repo-lokal-ke-github">Menghubungkan Repo Lokal ke GitHub</h3>
+<pre><code class="hljs cmd">:: Tambahkan remote bernama "origin"
+git remote add origin https://github.com/username/nama-repo.git
+
+:: Verifikasi remote
+git remote -v
+
+:: Push (kirim) ke GitHub untuk pertama kali
+git push -u origin main
+</code></pre>
+<h3 id="autentikasi-github">Autentikasi GitHub</h3>
+<p>GitHub tidak lagi menerima password biasa. Gunakan salah satu cara berikut:</p>
+<p><strong>Cara 1: Personal Access Token (PAT)</strong></p>
+<ol>
+<li>Buka <strong>GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)</strong></li>
+<li>Klik <strong>"Generate new token"</strong></li>
+<li>Centang scope <strong>"repo"</strong> (minimal)</li>
+<li>Copy token yang dihasilkan</li>
+<li>Gunakan token ini sebagai pengganti password saat diminta</li>
+</ol>
+<p><strong>Cara 2: GitHub CLI (Direkomendasikan)</strong></p>
+<pre><code class="hljs cmd">:: Install GitHub CLI via winget
+winget install --id GitHub.cli
+
+:: Login
+gh auth login
+</code></pre>
+<p>Ikuti instruksi di layar, pilih <strong>GitHub.com</strong> → <strong>HTTPS</strong> → <strong>Login with a web browser</strong>.</p>
+<h3 id="perintah-remote-penting">Perintah Remote Penting</h3>
+<pre><code class="hljs cmd">:: Clone repository dari GitHub ke lokal
+git clone https://github.com/username/nama-repo.git
+
+:: Clone ke folder dengan nama berbeda
+git clone https://github.com/username/nama-repo.git nama-folder-baru
+
+:: Pull (ambil perubahan terbaru dari remote)
+git pull origin main
+
+:: Push (kirim perubahan lokal ke remote)
+git push origin main
+
+:: Lihat semua remote
+git remote -v
+
+:: Hapus remote
+git remote remove origin
+</code></pre>
+<h3 id="alur-kerja-sehari-hari">Alur Kerja Sehari-Hari</h3>
+<pre><code class="hljs cmd">:: Setiap mulai kerja — ambil perubahan terbaru
+git pull origin main
+
+:: ... kerjakan tugasmu ...
+
+:: Setelah selesai — kirim ke GitHub
+git add .
+git commit -m "Deskripsi perubahan"
+git push origin main
+</code></pre>
+<hr>
+<h2 id="10-melihat-riwayat-dan-membatalkan-perubahan">10. Melihat Riwayat dan Membatalkan Perubahan</h2>
+<h3 id="melihat-riwayat-perubahan">Melihat Riwayat Perubahan</h3>
+<p>Saat bekerja dengan Git, kamu perlu tahu cara melihat apa yang berubah, siapa yang mengubah, dan kapan perubahan itu dibuat. Perintah-perintah berikut paling sering dipakai:</p>
+<pre><code class="hljs cmd">:: Lihat riwayat commit singkat
+git log --oneline
+
+:: Lihat riwayat commit dalam bentuk grafik
+git log --oneline --graph --all
+
+:: Lihat perubahan yang belum di-staging
+git diff
+
+:: Lihat perubahan yang sudah di-staging
+git diff --staged
+
+:: Lihat detail satu commit tertentu
+git show abc1234
+</code></pre>
+<p>Gunakan <code>git diff</code> saat ingin mengecek isi perubahan sebelum commit, dan <code>git log</code> saat ingin menelusuri riwayat repository.</p>
+<h3 id="membatalkan-perubahan-dengan-aman">Membatalkan Perubahan dengan Aman</h3>
+<p>Cara membatalkan perubahan tergantung pada posisi perubahan tersebut: masih di working directory, sudah di-staging, atau sudah terlanjur menjadi commit.</p>
+<pre><code class="hljs cmd">:: SEBELUM STAGING
+
+:: Batalkan perubahan pada file dan kembalikan ke versi commit terakhir
+git <span class="hljs-built_in">restore</span> nama-file.txt
+
+
+:: SETELAH STAGING, SEBELUM COMMIT
+
+:: Keluarkan file dari staging, tetapi perubahan file tetap dipertahankan
+git <span class="hljs-built_in">restore</span> --staged nama-file.txt
+
+
+:: SETELAH COMMIT
+
+:: Buat commit baru yang membatalkan commit tertentu
+git revert abc1234
+
+:: Hapus commit terakhir, tetapi perubahan tetap berada di staging area
+git reset --soft HEAD~<span class="hljs-number">1</span>
+
+:: Hapus commit terakhir, perubahan kembali ke working directory
+git reset --mixed HEAD~<span class="hljs-number">1</span>
+
+:: Hapus commit terakhir beserta semua perubahannya
+git reset --hard HEAD~<span class="hljs-number">1</span>
+</code></pre>
+<blockquote>
+<p><strong>Peringatan:</strong> <code>git reset --hard</code> menghapus perubahan secara permanen. Hindari memakai perintah ini pada repository bersama atau pada commit yang sudah di-push, kecuali kamu benar-benar paham risikonya.</p>
+</blockquote>
+<h3 id="memperbaiki-commit-terakhir">Memperbaiki Commit Terakhir</h3>
+<p>Jika kamu baru saja commit lalu sadar ada pesan yang salah atau ada file yang belum ikut, kamu bisa memperbaikinya tanpa membuat commit baru.</p>
+<pre><code class="hljs cmd">:: Ubah pesan commit terakhir
+git commit --amend -m "Pesan yang sudah diperbaiki"
+
+:: Tambahkan file yang terlupa ke commit terakhir
+git add file-yang-terlupa.txt
+git commit --amend --no-edit
+</code></pre>
+<blockquote>
+<p><strong>Catatan:</strong> <code>git commit --amend</code> aman untuk commit lokal yang belum di-push. Jika commit tersebut sudah di-push ke branch bersama, gunakan dengan hati-hati.</p>
+</blockquote>
+<hr>
+<h2 id="11-deployment-dengan-github-pages">11. Deployment dengan GitHub Pages</h2>
+<h3 id="mengapa-deployment-penting">Mengapa Deployment Penting?</h3>
+<p>Belajar Git akan terasa lebih utuh kalau hasil kerja tidak berhenti di laptop sendiri. Dengan deployment, repository yang kamu kelola bisa berubah menjadi website, dokumentasi, atau laporan analisis yang dapat diakses dosen, teman satu tim, dan publik.</p>
+<p>Untuk kebutuhan perkuliahan dan proyek data, <strong>GitHub Pages</strong> adalah pilihan yang sangat praktis karena:</p>
+<ul>
+<li>gratis</li>
+<li>terhubung langsung dengan repository GitHub</li>
+<li>cocok untuk website statis, dokumentasi, dan laporan analisis</li>
+<li>cukup mudah untuk pemula, tetapi tetap relevan untuk workflow yang lebih profesional</li>
+</ul>
+<h3 id="apa-itu-github-pages">Apa Itu GitHub Pages?</h3>
+<p><strong>GitHub Pages</strong> adalah layanan hosting gratis dari GitHub untuk menayangkan website statis langsung dari repository.</p>
+<p>Contoh URL yang dihasilkan:</p>
+<pre><code class="hljs text">https://username.github.io/nama-repo/
+</code></pre>
+<p>Jenis GitHub Pages yang paling umum:</p>
+<table>
+<thead>
+<tr>
+<th>Tipe</th>
+<th>Repository</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>User/Org site</strong></td>
+<td><code>username.github.io</code></td>
+<td><code>https://username.github.io</code></td>
+</tr>
+<tr>
+<td><strong>Project site</strong></td>
+<td>Repository biasa</td>
+<td><code>https://username.github.io/nama-repo</code></td>
+</tr>
+</tbody></table>
+<h3 id="kapan-menggunakan-pendekatan-yang-mana">Kapan Menggunakan Pendekatan yang Mana?</h3>
+<table>
+<thead>
+<tr>
+<th>Kebutuhan</th>
+<th>Pendekatan</th>
+<th>Cocok Untuk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Website HTML/CSS/JS sederhana</td>
+<td>Publish dari branch <code>main</code> ke <code>/root</code> atau <code>/docs</code></td>
+<td>Pemula</td>
+</tr>
+<tr>
+<td>Laporan <code>R Markdown</code> satu halaman</td>
+<td>Render lokal ke folder <code>docs/</code>, lalu push</td>
+<td>Tugas/laporan cepat</td>
+</tr>
+<tr>
+<td>Website analisis multi-halaman</td>
+<td>Render ke <code>docs/</code> dengan <code>render_site()</code> atau Quarto</td>
+<td>Proyek yang lebih rapi</td>
+</tr>
+<tr>
+<td>Deploy otomatis setiap ada push</td>
+<td>GitHub Actions + GitHub Pages</td>
+<td>Workflow yang lebih profesional</td>
+</tr>
+</tbody></table>
+<h3 id="persiapan-sebelum-deploy">Persiapan Sebelum Deploy</h3>
+<p>Sebelum menekan tombol publish, pastikan:</p>
+<ol>
+<li>Repository sudah ada di GitHub.</li>
+<li>Halaman utama akan menjadi <code>index.html</code>.</li>
+<li>Semua gambar, CSS, dan JavaScript menggunakan <strong>path relatif</strong>, bukan path lokal komputer.</li>
+<li>Hasil render sudah dicek dulu di browser lokal.</li>
+<li>Kamu konsisten memilih salah satu sumber deploy: <code>docs/</code> di branch tertentu atau workflow GitHub Actions.</li>
+</ol>
+<hr>
+<h3 id="111-deploy-website-html-sederhana">11.1 Deploy Website HTML Sederhana</h3>
+<p>Ini pendekatan paling mudah untuk website statis biasa.</p>
+<p><strong>Contoh struktur proyek:</strong></p>
+<pre><code class="hljs text">nama-repo/
+|-- index.html
+|-- style.css
+|-- script.js
+`-- assets/
+    `-- gambar.png
+</code></pre>
+<p><strong>Langkah-langkah:</strong></p>
+<ol>
+<li>Buat atau buka repository di GitHub.</li>
+<li>Pastikan ada file <code>index.html</code> di root proyek atau di folder <code>docs/</code>.</li>
+<li>Push semua file ke branch utama, biasanya <code>main</code>.</li>
+<li>Buka <strong>Settings</strong> repository -&gt; <strong>Pages</strong>.</li>
+<li>Pada bagian <strong>Build and deployment</strong>, pilih <strong>Deploy from a branch</strong>.</li>
+<li>Pilih branch <code>main</code>, lalu pilih folder <code>/(root)</code> atau <code>/docs</code>.</li>
+<li>Klik <strong>Save</strong> dan tunggu beberapa menit.</li>
+</ol>
+<blockquote>
+<p><strong>Catatan:</strong> GitHub Pages akan mencari <code>index.html</code> sebagai halaman awal. Jika nama file utamamu bukan <code>index.html</code>, website bisa tampil 404 atau hanya bisa diakses lewat URL file lengkap.</p>
+</blockquote>
+<hr>
+<h3 id="112-deploy-r-markdown-secara-manual">11.2 Deploy R Markdown Secara Manual</h3>
+<p>Pendekatan ini sangat cocok untuk tugas analisis data atau laporan yang hanya perlu diperbarui sesekali.</p>
+<p><strong>Alur kerjanya:</strong></p>
+<pre><code class="hljs text">analisis.Rmd -&gt; render di lokal -&gt; hasil HTML masuk ke docs/ -&gt; push ke GitHub -&gt; GitHub Pages menayangkan docs/
+</code></pre>
+<p><strong>Contoh struktur proyek:</strong></p>
+<pre><code class="hljs text">proyek-analisis/
+|-- analisis.Rmd
+|-- data/
+|   `-- dataset.csv
+`-- docs/
+</code></pre>
+<p><strong>Contoh YAML header pada file <code>.Rmd</code>:</strong></p>
+<pre><code class="hljs yaml"><span class="hljs-meta">---</span>
+<span class="hljs-attr">title:</span> <span class="hljs-string">"Judul Analisis"</span>
+<span class="hljs-attr">author:</span> <span class="hljs-string">"Namamu"</span>
+<span class="hljs-attr">date:</span> <span class="hljs-string">"`r Sys.Date()`"</span>
+<span class="hljs-attr">output:</span>
+  <span class="hljs-attr">html_document:</span>
+    <span class="hljs-attr">toc:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">toc_float:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">code_folding:</span> <span class="hljs-string">show</span>
+    <span class="hljs-attr">self_contained:</span> <span class="hljs-literal">true</span>
+<span class="hljs-meta">---</span>
+</code></pre>
+<p><strong>Mengapa <code>self_contained: true</code> penting?</strong></p>
+<ul>
+<li>Semua aset pendukung akan tertanam dalam satu file HTML.</li>
+<li>Risiko gambar atau CSS hilang saat dipublish jadi lebih kecil.</li>
+<li>Sangat cocok untuk laporan satu halaman.</li>
+</ul>
+<p><strong>Render file ke folder <code>docs/</code>:</strong></p>
+<pre><code class="hljs r">rmarkdown<span class="hljs-operator">::</span>render<span class="hljs-punctuation">(</span>
+  input <span class="hljs-operator">=</span> <span class="hljs-string">"analisis.Rmd"</span><span class="hljs-punctuation">,</span>
+  output_file <span class="hljs-operator">=</span> <span class="hljs-string">"index.html"</span><span class="hljs-punctuation">,</span>
+  output_dir <span class="hljs-operator">=</span> <span class="hljs-string">"docs"</span>
+<span class="hljs-punctuation">)</span>
+</code></pre>
+<p><strong>Push hasil render ke GitHub:</strong></p>
+<pre><code class="hljs cmd">git add analisis.Rmd docs/
+git commit -m "docs: publish laporan analisis ke GitHub Pages"
+git push origin main
+</code></pre>
+<p><strong>Aktifkan GitHub Pages:</strong></p>
+<ol>
+<li>Buka <strong>Settings</strong> -&gt; <strong>Pages</strong>.</li>
+<li>Pada <strong>Build and deployment</strong>, pilih <strong>Deploy from a branch</strong>.</li>
+<li>Pilih branch <code>main</code> dan folder <code>/docs</code>.</li>
+<li>Klik <strong>Save</strong>.</li>
+</ol>
+<p>Jika semua benar, website akan tayang di URL project site repository-mu.</p>
+<hr>
+<h3 id="113-deploy-otomatis-dengan-github-actions">11.3 Deploy Otomatis dengan GitHub Actions</h3>
+<p>Jika kamu tidak ingin render manual setiap kali ada perubahan, gunakan <strong>GitHub Actions</strong>. Workflow ini akan:</p>
+<ol>
+<li>mengambil isi repository,</li>
+<li>menjalankan proses build atau render,</li>
+<li>mengunggah hasil build,</li>
+<li>lalu mendeploy hasilnya ke GitHub Pages.</li>
+</ol>
+<p>Ini lebih rapi untuk proyek yang sering diperbarui atau dikerjakan berulang.</p>
+<p><strong>Contoh workflow untuk <code>R Markdown</code>:</strong></p>
+<p>Buat file <code>.github/workflows/deploy-pages.yml</code></p>
+<pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">and</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
+
+<span class="hljs-attr">on:</span>
+  <span class="hljs-attr">push:</span>
+    <span class="hljs-attr">branches:</span> [ <span class="hljs-string">main</span> ]
+  <span class="hljs-attr">workflow_dispatch:</span>
+
+<span class="hljs-attr">permissions:</span>
+  <span class="hljs-attr">contents:</span> <span class="hljs-string">read</span>
+  <span class="hljs-attr">pages:</span> <span class="hljs-string">write</span>
+  <span class="hljs-attr">id-token:</span> <span class="hljs-string">write</span>
+
+<span class="hljs-attr">concurrency:</span>
+  <span class="hljs-attr">group:</span> <span class="hljs-string">pages</span>
+  <span class="hljs-attr">cancel-in-progress:</span> <span class="hljs-literal">true</span>
+
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">build:</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+
+    <span class="hljs-attr">steps:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">repository</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">Pages</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/configure-pages@v5</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">R</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">r-lib/actions/setup-r@v2</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">Pandoc</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">r-lib/actions/setup-pandoc@v2</span>
+
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Install</span> <span class="hljs-string">R</span> <span class="hljs-string">packages</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">r-lib/actions/setup-r-dependencies@v2</span>
+        <span class="hljs-attr">with:</span>
+          <span class="hljs-attr">packages:</span> <span class="hljs-string">|
+            any::rmarkdown
+            any::knitr
+</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Render</span> <span class="hljs-string">R</span> <span class="hljs-string">Markdown</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">|
+          mkdir -p docs
+          Rscript -e "rmarkdown::render('analisis.Rmd', output_file='index.html', output_dir='docs')"
+</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Upload</span> <span class="hljs-string">Pages</span> <span class="hljs-string">artifact</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/upload-pages-artifact@v4</span>
+        <span class="hljs-attr">with:</span>
+          <span class="hljs-attr">path:</span> <span class="hljs-string">./docs</span>
+
+  <span class="hljs-attr">deploy:</span>
+    <span class="hljs-attr">needs:</span> <span class="hljs-string">build</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">name:</span> <span class="hljs-string">github-pages</span>
+      <span class="hljs-attr">url:</span> <span class="hljs-string">${{</span> <span class="hljs-string">steps.deployment.outputs.page_url</span> <span class="hljs-string">}}</span>
+
+    <span class="hljs-attr">steps:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
+        <span class="hljs-attr">id:</span> <span class="hljs-string">deployment</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/deploy-pages@v4</span>
+</code></pre>
+<p><strong>Pengaturan penting setelah workflow dibuat:</strong></p>
+<ol>
+<li>Buka <strong>Settings</strong> -&gt; <strong>Pages</strong>.</li>
+<li>Pada <strong>Source</strong>, pilih <strong>GitHub Actions</strong>.</li>
+<li>Push perubahan ke branch <code>main</code>.</li>
+<li>Pantau tab <strong>Actions</strong> sampai workflow selesai.</li>
+</ol>
+<p><strong>Kapan pendekatan otomatis lebih baik?</strong></p>
+<ul>
+<li>Saat laporan sering diperbarui.</li>
+<li>Saat proyek dikerjakan lebih dari satu orang.</li>
+<li>Saat kamu ingin proses publish konsisten dan minim langkah manual.</li>
+</ul>
+<hr>
+<h3 id="114-website-multi-halaman-dengan-r-markdown-atau-quarto">11.4 Website Multi-Halaman dengan R Markdown atau Quarto</h3>
+<p>Kalau proyekmu lebih dari satu halaman, jangan paksa semuanya ke satu file besar. Lebih baik buat website kecil yang terstruktur.</p>
+<h4 id="opsi-a-rmarkdownrender_site">Opsi A: <code>rmarkdown::render_site()</code></h4>
+<p>Struktur proyek:</p>
+<pre><code class="hljs text">proyek-website/
+|-- _site.yml
+|-- index.Rmd
+|-- eda.Rmd
+|-- modeling.Rmd
+`-- kesimpulan.Rmd
+</code></pre>
+<p>Contoh file <code>_site.yml</code>:</p>
+<pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">"Analisis Data"</span>
+<span class="hljs-attr">output_dir:</span> <span class="hljs-string">docs</span>
+<span class="hljs-attr">navbar:</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">"Proyek Analisis"</span>
+  <span class="hljs-attr">left:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">text:</span> <span class="hljs-string">"Beranda"</span>
+      <span class="hljs-attr">href:</span> <span class="hljs-string">index.html</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">text:</span> <span class="hljs-string">"EDA"</span>
+      <span class="hljs-attr">href:</span> <span class="hljs-string">eda.html</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">text:</span> <span class="hljs-string">"Modeling"</span>
+      <span class="hljs-attr">href:</span> <span class="hljs-string">modeling.html</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">text:</span> <span class="hljs-string">"Kesimpulan"</span>
+      <span class="hljs-attr">href:</span> <span class="hljs-string">kesimpulan.html</span>
+
+<span class="hljs-attr">output:</span>
+  <span class="hljs-attr">html_document:</span>
+    <span class="hljs-attr">toc:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">toc_float:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">self_contained:</span> <span class="hljs-literal">false</span>
+</code></pre>
+<p>Render seluruh situs:</p>
+<pre><code class="hljs r">rmarkdown<span class="hljs-operator">::</span>render_site<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span>
+</code></pre>
+<blockquote>
+<p><strong>Catatan:</strong> Jika <code>self_contained: false</code>, pastikan seluruh file pendukung hasil render ikut ter-push ke <code>docs/</code>.</p>
+</blockquote>
+<h4 id="opsi-b-quarto">Opsi B: Quarto</h4>
+<p><strong>Quarto</strong> adalah pilihan modern untuk laporan dan website data. Ia cocok untuk R, Python, dan kombinasi keduanya.</p>
+<p>Contoh file <code>_quarto.yml</code>:</p>
+<pre><code class="hljs yaml"><span class="hljs-attr">project:</span>
+  <span class="hljs-attr">type:</span> <span class="hljs-string">website</span>
+  <span class="hljs-attr">output-dir:</span> <span class="hljs-string">docs</span>
+
+<span class="hljs-attr">website:</span>
+  <span class="hljs-attr">title:</span> <span class="hljs-string">"Analisis Klaim Asuransi"</span>
+  <span class="hljs-attr">navbar:</span>
+    <span class="hljs-attr">left:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">href:</span> <span class="hljs-string">index.qmd</span>
+        <span class="hljs-attr">text:</span> <span class="hljs-string">Beranda</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">href:</span> <span class="hljs-string">eda.qmd</span>
+        <span class="hljs-attr">text:</span> <span class="hljs-string">EDA</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">href:</span> <span class="hljs-string">modeling.qmd</span>
+        <span class="hljs-attr">text:</span> <span class="hljs-string">Modeling</span>
+
+<span class="hljs-attr">format:</span>
+  <span class="hljs-attr">html:</span>
+    <span class="hljs-attr">toc:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">code-fold:</span> <span class="hljs-literal">true</span>
+</code></pre>
+<p>Render website Quarto:</p>
+<pre><code class="hljs cmd">quarto render
+</code></pre>
+<p>Setelah itu, kamu bisa:</p>
+<ul>
+<li>publish dari folder <code>docs/</code>, atau</li>
+<li>mengganti langkah render di workflow GitHub Actions dengan <code>quarto render</code></li>
+</ul>
+<hr>
+<h3 id="115-checklist-sebelum-publish">11.5 Checklist Sebelum Publish</h3>
+<p>Gunakan checklist ini sebelum deploy:</p>
+<pre><code class="hljs text">[ ] File utama bernama index.html
+[ ] Semua aset memakai path relatif
+[ ] Folder output sudah benar (docs/ atau artifact build)
+[ ] Tidak ada data sensitif di repository
+[ ] Hasil website/laporan sudah dicek di browser lokal
+[ ] Pengaturan Pages sudah sesuai dengan metode deploy yang dipilih
+</code></pre>
+<h3 id="116-troubleshooting-umum">11.6 Troubleshooting Umum</h3>
+<table>
+<thead>
+<tr>
+<th>Masalah</th>
+<th>Penyebab yang Sering Terjadi</th>
+<th>Solusi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Halaman 404</td>
+<td>Tidak ada <code>index.html</code> di lokasi publish</td>
+<td>Pastikan file output bernama <code>index.html</code></td>
+</tr>
+<tr>
+<td>Gambar/CSS tidak muncul</td>
+<td>Path masih absolut atau file aset tidak ikut ter-push</td>
+<td>Gunakan path relatif dan cek folder output</td>
+</tr>
+<tr>
+<td>Situs tidak berubah</td>
+<td>Belum selesai build, cache browser, atau source salah</td>
+<td>Tunggu beberapa menit, refresh keras, cek Settings -&gt; Pages</td>
+</tr>
+<tr>
+<td>Workflow gagal</td>
+<td>Package/dependency belum lengkap</td>
+<td>Tambahkan dependency yang diperlukan di workflow</td>
+</tr>
+<tr>
+<td>File <code>docs/</code> tidak terbaca</td>
+<td>Folder output salah atau belum dibuat</td>
+<td>Pastikan render menghasilkan file ke <code>docs/</code></td>
+</tr>
+</tbody></table>
+<h3 id="117-alur-praktis-yang-disarankan">11.7 Alur Praktis yang Disarankan</h3>
+<p>Untuk pemula, urutan kerja yang paling aman biasanya seperti ini:</p>
+<ol>
+<li>Kerjakan laporan atau website di lokal.</li>
+<li>Render hasil ke <code>docs/</code>.</li>
+<li>Cek hasilnya di browser lokal.</li>
+<li>Commit dan push ke GitHub.</li>
+<li>Aktifkan GitHub Pages dari <code>/docs</code>, atau gunakan GitHub Actions jika ingin otomatis.</li>
+</ol>
+<p>Dengan alur ini, Git berfungsi sebagai pencatat versi, sedangkan GitHub Pages menjadi media publikasinya.</p>
+<hr>
+<h2 id="12-tips-trik-dan-best-practice">12. Tips, Trik, dan Best Practice</h2>
+<h3 id="file-gitignore">File <code>.gitignore</code></h3>
+<p>File <code>.gitignore</code> memberitahu Git untuk <strong>mengabaikan</strong> file atau folder tertentu agar tidak ikut dilacak.</p>
+<pre><code class="hljs cmd">:: Buat file .gitignore
+notepad .gitignore
+</code></pre>
+<p>Contoh <code>.gitignore</code> untuk proyek Python atau analisis data:</p>
+<pre><code class="hljs gitignore"># Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# Build dan log
+*.log
+dist/
+build/
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+*_cache/
+*_files/
+
+# Rahasia / credential
+secrets.json
+.env.local
+</code></pre>
+<blockquote>
+<p><strong>Aturan emas:</strong> Jangan pernah commit password, API key, token, atau file credential ke Git.</p>
+</blockquote>
+<h3 id="git-aliases">Git Aliases</h3>
+<p>Alias membantu mempercepat perintah yang sering dipakai:</p>
+<pre><code class="hljs cmd">git config --global alias.st status
+git config --global alias.cm "commit -m"
+git config --global alias.lg "log --oneline --graph --all --decorate"
+
+:: Contoh penggunaan
+git st
+git cm "docs: rapikan struktur modul"
+git lg
+</code></pre>
+<h3 id="conventional-commits">Conventional Commits</h3>
+<p>Format commit yang rapi akan sangat membantu saat membaca riwayat perubahan.</p>
+<pre><code class="hljs text">&lt;type&gt;: &lt;description&gt;
+</code></pre>
+<p>Atau jika ingin lebih spesifik:</p>
+<pre><code class="hljs text">&lt;type&gt;(&lt;scope&gt;): &lt;description&gt;
+</code></pre>
+<p>Tipe commit yang paling umum:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Kapan Digunakan</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>feat</code></td>
+<td>Menambah fitur atau konten baru</td>
+</tr>
+<tr>
+<td><code>fix</code></td>
+<td>Memperbaiki bug atau kesalahan</td>
+</tr>
+<tr>
+<td><code>docs</code></td>
+<td>Perubahan dokumentasi</td>
+</tr>
+<tr>
+<td><code>refactor</code></td>
+<td>Merapikan struktur tanpa mengubah hasil</td>
+</tr>
+<tr>
+<td><code>test</code></td>
+<td>Menambah atau memperbaiki pengujian</td>
+</tr>
+<tr>
+<td><code>chore</code></td>
+<td>Tugas pemeliharaan kecil</td>
+</tr>
+</tbody></table>
+<p>Contoh:</p>
+<pre><code class="hljs text">docs: tambah panduan deployment GitHub Pages
+fix: perbaiki path output laporan
+feat(report): tambah halaman kesimpulan
+</code></pre>
+<h3 id="perintah-ringkas-yang-sering-dipakai">Perintah Ringkas yang Sering Dipakai</h3>
+<pre><code class="hljs cmd">git status
+git add .
+git commit -m "pesan"
+git log --oneline
+git diff
+git remote -v
+git push origin main
+</code></pre>
+<h3 id="checklist-sebelum-push">Checklist Sebelum Push</h3>
+<pre><code class="hljs text">[ ] File sensitif sudah aman
+[ ] .gitignore sudah benar
+[ ] Pesan commit jelas dan deskriptif
+[ ] Hasil akhir sudah dicek
+[ ] File yang di-push memang file yang dibutuhkan
+</code></pre>
+<hr>
+<h2 id="13-referensi-dan-sumber-belajar-lanjutan">13. Referensi dan Sumber Belajar Lanjutan</h2>
+<h3 id="dokumentasi-resmi">Dokumentasi Resmi</h3>
+<ul>
+<li><strong>Git Documentation</strong> - <a href="https://git-scm.com/doc">git-scm.com/doc</a></li>
+<li><strong>Pro Git Book</strong> - <a href="https://git-scm.com/book/en/v2">git-scm.com/book</a></li>
+<li><strong>GitHub Docs</strong> - <a href="https://docs.github.com">docs.github.com</a></li>
+<li><strong>GitHub Pages Docs</strong> - <a href="https://docs.github.com/en/pages">docs.github.com/pages</a></li>
+<li><strong>Quarto Docs</strong> - <a href="https://quarto.org/docs">quarto.org/docs</a></li>
+</ul>
+<h3 id="latihan-dan-pembelajaran-interaktif">Latihan dan Pembelajaran Interaktif</h3>
+<ul>
+<li><strong>Learn Git Branching</strong> - <a href="https://learngitbranching.js.org">learngitbranching.js.org</a></li>
+<li><strong>GitHub Skills</strong> - <a href="https://skills.github.com">skills.github.com</a></li>
+<li><strong>Oh My Git!</strong> - game untuk belajar Git secara visual</li>
+</ul>
+<h3 id="cheat-sheet-singkat">Cheat Sheet Singkat</h3>
+<pre><code class="hljs cmd">:: SETUP
+git config --global user.name "Nama"
+git config --global user.email "email@mail.com"
+
+:: MEMULAI REPOSITORY
+git init
+git clone &lt;url&gt;
+
+:: PERUBAHAN HARIAN
+git status
+git add &lt;file&gt;
+git add .
+git commit -m "pesan"
+git log --oneline
+
+:: REMOTE
+git remote add origin &lt;url&gt;
+git push -u origin main
+git pull origin main
+
+:: DEPLOYMENT
+quarto render
+git add docs/
+git commit -m "docs: update website"
+git push origin main
+</code></pre>
+<hr>
+<blockquote>
+<p><strong>Catatan Akhir</strong></p>
+<p>Git adalah skill yang paling cepat dikuasai lewat praktik langsung. Mulailah dari workflow sederhana: edit file, commit, push, lalu publish hasilnya. Setelah itu, barulah perlahan naik ke workflow yang lebih otomatis.</p>
+<p><em>"Commit early, commit often."</em> - Git mantra</p>
+</blockquote>
+<hr>
+<p><em>Modul ini dibuat sebagai panduan belajar Git dari nol hingga mahir. Versi terakhir diperbarui: April 2026.</em></p>
+
+	
+
+</body></html>

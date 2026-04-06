@@ -1,0 +1,215 @@
+@page {
+  size: A4;
+  margin: 18mm 14mm 18mm 16mm;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.58;
+  color: #1f2937;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #0f172a;
+  line-height: 1.25;
+  break-after: avoid-page;
+}
+
+h1 {
+  font-size: 24pt;
+  margin-bottom: 0.45em;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid #1d4ed8;
+}
+
+h2 {
+  font-size: 16pt;
+  margin-top: 1.5em;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+h3 {
+  font-size: 12.5pt;
+  color: #1e40af;
+}
+
+h4 {
+  font-size: 11.25pt;
+}
+
+p,
+li {
+  text-align: justify;
+}
+
+ol,
+ul {
+  padding-left: 1.35em;
+}
+
+#daftar-isi {
+  margin-top: 0.6em;
+}
+
+#daftar-isi + p {
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+  padding: 0.9em 1.15em 0.85em 1.45em;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #f8fbff;
+  line-height: 1.5;
+}
+
+#daftar-isi + p a {
+  text-decoration: none;
+}
+
+#daftar-isi + p br {
+  line-height: 1.7;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  margin: 0.8em 0 1.1em;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+th,
+td {
+  padding: 0.45em 0.6em;
+  border: 1px solid #cbd5e1;
+  vertical-align: top;
+}
+
+th {
+  background: #eff6ff;
+  color: #0f172a;
+}
+
+blockquote {
+  margin: 0.5em 0 1em;
+  padding: 0.7em 0.9em;
+  border-left: 4px solid #60a5fa;
+  background: #eff6ff;
+  font-style: normal;
+}
+
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
+}
+
+.code-caption {
+  margin: 0.32em 0 0.08em;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+  break-after: avoid-page;
+  page-break-after: avoid;
+}
+
+.code-caption + pre {
+  margin-top: 0.12em;
+  break-before: avoid-page;
+  page-break-before: avoid;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+code {
+  padding: 0.12em 0.32em;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background: #f6f8fa;
+  color: #1f2937;
+  font-size: 0.92em;
+}
+
+pre {
+  margin: 0.5em 0 0.75em;
+  padding: 0.55em 0.7em;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #24292f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  white-space: pre-wrap;
+  overflow-wrap: normal;
+  word-break: normal;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+pre code,
+pre code.hljs,
+pre .hljs {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 0.95em;
+  line-height: 1.45;
+  white-space: inherit;
+  word-break: inherit;
+  overflow-wrap: inherit;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+pre > code.hljs.cmd::before,
+pre > code.hljs.bash::before,
+pre > code.hljs.sh::before,
+pre > code.hljs.powershell::before,
+pre > code.hljs.r::before,
+pre > code.hljs.yaml::before,
+pre > code.hljs.gitignore::before {
+  content: none;
+}
+
+pre code span,
+pre .hljs span {
+  color: inherit !important;
+  font-style: inherit !important;
+  font-weight: inherit !important;
+}
+
+pre code.hljs {
+  overflow-x: visible;
+}
+
+.hljs {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+img,
+table,
+pre,
+blockquote {
+  break-inside: avoid-page;
+}
+
+hr {
+  margin: 1.4em 0;
+  border: 0;
+  border-top: 1px solid #cbd5e1;
+}
