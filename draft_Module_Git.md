@@ -22,11 +22,11 @@
 
 ---
 
-## 1. Apa Itu Version Control?
+## 1. Apa Itu *Version Control*?
 
 ### Pengertian
 
-**Version Control System** adalah sistem yang merekam setiap *update* pada file atau sekumpulan file dari waktu ke waktu sehingga *user* bisa kembali ke versi tertentu kapan pun kamu mau.
+***Version Control System*** adalah sistem yang merekam setiap *update* pada file atau sekumpulan file dari waktu ke waktu sehingga *user* bisa kembali ke versi tertentu.
 
 Misalnya, *user* menulis tugas dan menyimpan file seperti ini:
 
@@ -43,9 +43,9 @@ Inilah masalah yang bisa diselesaikan oleh version control dengan hanya memiliki
 
 | Kegunaan | Penjelasan |
 |---|---|
-| **Pelacakan Perubahan** | Tahu siapa mengubah apa, kapan, dan kenapa |
+| **Pelacakan Perubahan** | Mengetahui *user* mana mengubah apa, kapan, dan kenapa |
 | **Pemulihan** | Kembalikan file ke versi sebelumnya jika ada kesalahan |
-| **Kolaborasi** | Banyak orang bisa bekerja pada proyek yang sama secara bersamaan |
+| **Kolaborasi** | Banyak orang bisa bekerja pada satu proyek yang sama secara bersamaan |
 | **Branching** | Uji coba fitur baru tanpa merusak kode utama |
 | **Audit Trail** | Riwayat lengkap seluruh perubahan proyek |
 
@@ -55,15 +55,15 @@ Inilah masalah yang bisa diselesaikan oleh version control dengan hanya memiliki
 
 ### Apa Itu Git?
 
-**Git** adalah sistem version control terdistribusi (*Distributed Version Control System*) yang paling populer di dunia. Git dibuat oleh **Linus Torvalds** pada tahun 2005 untuk mengelola pengembangan kernel Linux.
+**Git** adalah *Distributed Version Control System* yang paling populer di dunia. Git dibuat oleh **Linus Torvalds** pada tahun 2005 untuk mengelola pengembangan kernel Linux.
 
-### Mengapa Git?
+### Mengapa Git Digunakan?
 
-- **Cepat** — Sebagian besar operasi berjalan secara lokal
-- **Aman** — Setiap data di-hash menggunakan SHA-1
-- **Branching yang mudah** — Membuat dan menggabungkan branch sangat ringan
-- **Terdistribusi** — Setiap developer punya salinan penuh repository
-- **Gratis dan Open Source**
+- **Cepat**, karena sebagian besar operasi berjalan secara lokal
+- **Aman**, setiap data di-hash menggunakan SHA-1
+- **Branching yang mudah**, membuat dan menggabungkan branch sangat ringan
+- **Terdistribusi**, setiap developer punya salinan penuh repository
+- **Gratis dan Open Source**, dapat diakses semua orang
 
 ### Git vs GitHub
 
@@ -71,8 +71,8 @@ Inilah masalah yang bisa diselesaikan oleh version control dengan hanya memiliki
 
 | | **Git** | **GitHub** |
 |---|---|---|
-| **Apa** | Software version control | Platform hosting repository |
-| **Di mana** | Berjalan di komputermu | Layanan cloud (website) |
+| **Definisi** | Software version control | Platform hosting repository |
+| **Lokasi** | Berjalan di komputermu | Layanan cloud (website) |
 | **Fungsi** | Melacak perubahan kode | Menyimpan & berkolaborasi online |
 | **Alternatif** | Mercurial, SVN | GitLab, Bitbucket |
 
@@ -84,32 +84,32 @@ Analoginya: **Git** = Microsoft Word, **GitHub** = Google Drive.
 
 ### Langkah-Langkah
 
-1. Buka **[github.com](https://github.com)** di browser
+1. Buka **[github.com](https://github.com)** di *browser*
 2. Klik **"Sign up"** di pojok kanan atas
-3. Pilih metode pendaftaran yang kamu inginkan:
-4. **Metode Email (manual)**: masukkan **email** kamu, buat **password** yang kuat, lalu pilih **username** (misal: `namaKamu-dev`)
-5. **Metode SSO**: klik **"Continue with Google"** atau **"Continue with Apple"**, lalu ikuti proses login dari akun Google/Apple kamu
-6. Selesaikan verifikasi dan klik **"Create account"** (atau lanjutkan flow akun otomatis jika kamu memakai Google/Apple)
-7. Pilih plan **Free** (sudah lebih dari cukup untuk pemula)
+3. Pilih metode pendaftaran yang diinginkan:
+4. **Metode Email (manual)**: masukkan **email**, buat **password** yang kuat, lalu pilih **username** (misal: `namaAnda-dev`)
+5. **Metode SSO**: klik **"Continue with Google"** atau **"Continue with Apple"**, lalu ikuti proses login dari akun Google/Apple
+6. Selesaikan verifikasi dan klik **"Create account"** (atau lanjutkan *flow* akun otomatis jika memakai Google/Apple)
+7. Pilih *plan* **Free** (*plan* ini sudah lebih dari cukup untuk pemula)
 8. Lengkapi verifikasi email jika diminta
 
-> **Catatan:** Jika kamu mendaftar dengan Google/Apple, GitHub biasanya tetap akan meminta melengkapi **username** dan beberapa pengaturan akun sebelum akun siap dipakai.
+> **Catatan:** Jika mendaftar dengan Google/Apple, GitHub biasanya tetap akan meminta melengkapi **username** dan beberapa pengaturan akun sebelum akun siap dipakai.
 
 ### Tips Memilih Username GitHub
 
 - Gunakan nama asli atau nama profesional
 - Hindari angka atau karakter acak
-- Konsisten dengan platform lain (LinkedIn, dll)
+- Konsisten dengan *platform* lain (LinkedIn, dll)
 - Contoh bagus: `rifkimart`, `rifkidev`, `rifki-martleo`
 
 ### Personalisasi Profil
 
 Setelah akun dibuat, lengkapi profilmu:
-- **Avatar** — Foto profesional atau avatar yang konsisten
-- **Bio** — Deskripsi singkat (misal: "Statistics Student | Data Science Enthusiast")
-- **Location** — Kota/negara
-- **Website** — Link portfolio jika ada
-- **README Profile** — File khusus yang tampil di halaman profil GitHub
+- **Avatar**, memilih foto profesional atau avatar yang konsisten
+- **Bio**, masukkan deskripsi singkat (misal: "Statistics Student | Data Science Enthusiast")
+- **Location**, masukkan kota/negara
+- **Website**, masukkan *link* portfolio jika ada
+- **README Profile**, masukkan *file* khusus yang tampil di halaman profil GitHub
 
 ---
 
@@ -117,7 +117,7 @@ Setelah akun dibuat, lengkapi profilmu:
 
 ### Apa Itu GitHub Student Developer Pack?
 
-**GitHub Student Developer Pack** adalah program dari GitHub yang memberikan **akses gratis** ke berbagai tool dan layanan berbayar khusus untuk pelajar/mahasiswa aktif. Nilainya bisa mencapai ribuan dolar!
+**GitHub Student Developer Pack** adalah program dari GitHub yang memberikan **akses gratis** ke berbagai *tool* dan layanan berbayar khusus untuk pelajar/mahasiswa aktif.
 
 ### Cara Mendaftar
 
